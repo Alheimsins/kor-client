@@ -17,18 +17,18 @@ Programflyt
 ```bash
 git clone https:/github.com/alheimsins/kor-client
 npm i
-node tst.js
+node example.js
 ```
 
 ## Test klient
 
-Endre evt klient-innstillinger i [tst.js](tst.js)
+Endre evt klient-innstillinger i [example.js](example.js)
 
 Legg inn ditt sertifikat og privatnøkkel i `src/data/`
 
-Start med `node tst.js`
+Start med `node example.js`
 
-tst.js eksempelet henter informasjon om person fra kontakt- og reservervasjonsregisteret
+[example.js](example.js) eksempelet henter informasjon om person fra kontakt- og reservervasjonsregisteret
 
 ## Client options
 
@@ -45,3 +45,9 @@ tst.js eksempelet henter informasjon om person fra kontakt- og reservervasjonsre
 ## License
 
 [MIT](LICENSE)
+
+## About
+
+Created with ❤ for [Alheimsins](https://alheimsins.net)
+
+<img src="https://image.ibb.co/dPH08G/logo_black.png" height="150px" width="150px" />

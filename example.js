@@ -1,6 +1,6 @@
 (async () => {
   const { readFileSync } = require('fs')
-  const openIdClient = require('./src/index')
+  const openIdClient = require('./src')
 
   const clientOptions = {
     url: 'https://oidc-ver1.difi.no/',

@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken')
-const uuid = require('uuid/v1')
+const uuid = require('uuid-random')
 const cleanCert = cert => [ cert.replace(/(-----(BEGIN|END) (CERTIFICATE|PRIVATE KEY)-----|\n)/g, '').replace(/\n/g, '') ]
 
 module.exports = options => {
