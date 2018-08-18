@@ -15,7 +15,7 @@ Programflyt
 ## Installasjon
 
 ```bash
-git clone https:/github.com/alheimsins/kor-client-jsonwebtoken
+git clone https:/github.com/alheimsins/kor-client
 npm i
 node tst.js
 ```
