@@ -31,7 +31,7 @@ module.exports = async options => {
   let config = false
   try {
     config = await discover({ url: options.url })
-    config.jwt = await createJwt({...options, audience: config.issuer, algorithm: config.id_token_signing_alg_values_supported[0]})
+    config.jwt = await createJwt({ ...options, audience: config.issuer, algorithm: config.id_token_signing_alg_values_supported[0] })
     config.token = await getToken({ url: config.token_endpoint, jwt: config.jwt })
   } catch (error) {
     throw error.response && error.response.data && error.response.data.error ? error.response.data : error
