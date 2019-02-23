@@ -7,7 +7,7 @@
     "src/*"
   ],
   "engines": {
-    "node": ">=10.13.0"
+    "node": ">=10.15.1"
   },
   "publishConfig": {
     "access": "public"
