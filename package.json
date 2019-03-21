@@ -48,7 +48,7 @@
   "homepage": "https://github.com/alheimsins/kor-client#readme",
   "dependencies": {
     "axios": "0.18.0",
-    "jsonwebtoken": "8.5.0",
+    "jsonwebtoken": "8.5.1",
     "uuid-random": "1.0.7"
   },
   "devDependencies": {
