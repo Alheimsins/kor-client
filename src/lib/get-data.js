@@ -23,10 +23,6 @@ module.exports = async options => {
     }
   }
 
-  try {
-    const { data } = await axios(httpOptions)
-    return data
-  } catch (error) {
-    throw error
-  }
+  const { data } = await axios(httpOptions)
+  return data
 }

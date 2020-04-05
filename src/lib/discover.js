@@ -33,10 +33,6 @@ module.exports = async options => {
   }
 
   const url = getDiscoveryUrl(options.url)
-  try {
-    const { data } = await axios.get(url)
-    return validatePaths(data)
-  } catch (error) {
-    throw error
-  }
+  const { data } = await axios.get(url)
+  return validatePaths(data)
 }

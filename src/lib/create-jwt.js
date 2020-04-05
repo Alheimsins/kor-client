@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken')
 const uuid = require('uuid-random')
-const cleanCert = cert => [ cert.replace(/(-----(BEGIN|END) (CERTIFICATE|PRIVATE KEY)-----|\n)/g, '').replace(/\n/g, '') ]
+const cleanCert = cert => [cert.replace(/(-----(BEGIN|END) (CERTIFICATE|PRIVATE KEY)-----|\n)/g, '').replace(/\n/g, '')]
 
 module.exports = options => {
   if (!options) {
@@ -37,13 +37,9 @@ module.exports = options => {
     jti: uuid()
   }
 
-  try {
-    const token = jwt.sign(payload, { key: options.privateKey, passphrase: options.privateKeyPassphrase }, jwtOptions)
-    /* Uncomment to debug jwt
-      console.log(jwt.decode(token, {complete: true}))
-    */
-    return token
-  } catch (error) {
-    throw error
-  }
+  const token = jwt.sign(payload, { key: options.privateKey, passphrase: options.privateKeyPassphrase }, jwtOptions)
+  /* Uncomment to debug jwt
+    console.log(jwt.decode(token, {complete: true}))
+  */
+  return token
 }
